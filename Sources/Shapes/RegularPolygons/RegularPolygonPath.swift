@@ -1,5 +1,5 @@
 import SwiftUI
-
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension Path {
     static func regularPolygon(sides: Int, in rect: CGRect, inset: CGFloat = 0) -> Path {
         let width = rect.size.width - inset * 2

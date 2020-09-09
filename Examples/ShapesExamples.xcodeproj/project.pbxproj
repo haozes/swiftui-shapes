@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D73A26F625086B5900BDE8CC /* Shapes in Frameworks */ = {isa = PBXBuildFile; productRef = D73A26F525086B5900BDE8CC /* Shapes */; };
 		FA86726E238DE61500226819 /* RegularPolygonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86726D238DE61500226819 /* RegularPolygonsView.swift */; };
 		FA86726F238DE61500226819 /* RegularPolygonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86726D238DE61500226819 /* RegularPolygonsView.swift */; };
 		FA867271238DE6CD00226819 /* LinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867270238DE6CD00226819 /* LinesView.swift */; };
@@ -17,7 +18,6 @@
 		FABCDB5F2364DF8500842ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABCDB5E2364DF8500842ED9 /* Assets.xcassets */; };
 		FABCDB622364DF8500842ED9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABCDB612364DF8500842ED9 /* Preview Assets.xcassets */; };
 		FABCDB652364DF8500842ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABCDB632364DF8500842ED9 /* LaunchScreen.storyboard */; };
-		FABCDB6C2364DFD100842ED9 /* Shapes in Frameworks */ = {isa = PBXBuildFile; productRef = FABCDB6B2364DFD100842ED9 /* Shapes */; };
 		FABCDB752364E11E00842ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCDB742364E11E00842ED9 /* AppDelegate.swift */; };
 		FABCDB772364E11E00842ED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCDB762364E11E00842ED9 /* ContentView.swift */; };
 		FABCDB792364E11F00842ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABCDB782364E11F00842ED9 /* Assets.xcassets */; };
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABCDB6C2364DFD100842ED9 /* Shapes in Frameworks */,
+				D73A26F625086B5900BDE8CC /* Shapes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +170,7 @@
 			);
 			name = "ShapesExamples iOS";
 			packageProductDependencies = (
-				FABCDB6B2364DFD100842ED9 /* Shapes */,
+				D73A26F525086B5900BDE8CC /* Shapes */,
 			);
 			productName = "ShapesExamples iOS";
 			productReference = FABCDB552364DF8400842ED9 /* ShapesExamples iOS.app */;
@@ -223,7 +223,7 @@
 			);
 			mainGroup = FABCDB4A2364DF0600842ED9;
 			packageReferences = (
-				FABCDB6A2364DFD100842ED9 /* XCRemoteSwiftPackageReference "Shapes" */,
+				D73A26F425086B5900BDE8CC /* XCRemoteSwiftPackageReference "swiftui-shapes" */,
 			);
 			productRefGroup = FABCDB562364DF8400842ED9 /* Products */;
 			projectDirPath = "";
@@ -686,20 +686,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FABCDB6A2364DFD100842ED9 /* XCRemoteSwiftPackageReference "Shapes" */ = {
+		D73A26F425086B5900BDE8CC /* XCRemoteSwiftPackageReference "swiftui-shapes" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:SwiftUIExtensions/Shapes.git";
+			repositoryURL = "https://github.com/haozes/swiftui-shapes.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FABCDB6B2364DFD100842ED9 /* Shapes */ = {
+		D73A26F525086B5900BDE8CC /* Shapes */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FABCDB6A2364DFD100842ED9 /* XCRemoteSwiftPackageReference "Shapes" */;
+			package = D73A26F425086B5900BDE8CC /* XCRemoteSwiftPackageReference "swiftui-shapes" */;
 			productName = Shapes;
 		};
 		FABCDB862364E16500842ED9 /* Shapes */ = {

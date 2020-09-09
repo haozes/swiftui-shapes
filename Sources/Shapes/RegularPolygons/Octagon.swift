@@ -16,6 +16,7 @@ public struct Octagon: InsettableShape {
     }
 }
 
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension Octagon {
     init(inset: CGFloat) {
         self.inset = inset

@@ -23,6 +23,7 @@ public struct RegularPolygon: InsettableShape {
     }
 }
 
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension RegularPolygon {
     init(sides: Int, inset: CGFloat) {
         self.sides = sides

@@ -14,6 +14,7 @@ public struct QuadCurve: Shape {
     }
 }
 
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public extension QuadCurve {
     init<Data: RandomAccessCollection>(unitData: Data) where Data.Element : BinaryFloatingPoint {
         let step: CGFloat = unitData.count > 1 ? 1.0 / CGFloat(unitData.count - 1) : 1.0
@@ -21,6 +22,7 @@ public extension QuadCurve {
     }
 }
 
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct Curve_Previews: PreviewProvider {
     static var previews: some View {
         QuadCurve(unitPoints: [

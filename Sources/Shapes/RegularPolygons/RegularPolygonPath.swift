@@ -1,13 +1,13 @@
 import SwiftUI
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-extension Path {
-    static func regularPolygon(sides: Int, in rect: CGRect, inset: CGFloat = 0) -> Path {
+extension SwiftUI.Path {
+    static func regularPolygon(sides: Int, in rect: CGRect, inset: CGFloat = 0) -> SwiftUI.Path {
         let width = rect.size.width - inset * 2
         let height = rect.size.height - inset * 2
         let hypotenuse = Double(min(width, height)) / 2.0
         let centerPoint = CGPoint(x: width / 2.0, y: height / 2.0)
         
-        return Path { path in
+        return SwiftUI.Path { path in
             (0...sides).forEach { index in
                 let angle = ((Double(index) * (360.0 / Double(sides))) - 90) * Double.pi / 180
                 let point = CGPoint(

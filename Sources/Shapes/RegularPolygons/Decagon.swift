@@ -8,7 +8,7 @@ public struct Decagon: InsettableShape {
     }
     
     public func path(in rect: CGRect) -> Path {
-        Path.regularPolygon(sides: 10, in: rect, inset: inset)
+        SwiftUI.Path.regularPolygon(sides: 10, in: rect, inset: inset)
     }
     
     public init() {

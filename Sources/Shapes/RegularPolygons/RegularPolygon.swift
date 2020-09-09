@@ -9,7 +9,7 @@ public struct RegularPolygon: InsettableShape {
     }
     
     public func path(in rect: CGRect) -> Path {
-        Path.regularPolygon(sides: self.sides, in: rect, inset: inset)
+        SwiftUI.Path.regularPolygon(sides: self.sides, in: rect, inset: inset)
     }
     
     public init(sides: Int) {
